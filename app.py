@@ -7,6 +7,40 @@ import plotly.express as px
 sys.path.append(os.path.abspath("."))
 
 st.title(" 📊 My Data Automation Pipeline")
+st.markdown("""
+        <style>
+        body {
+            background: linear-gradient(135deg, #6366F1, #8B5CF6);
+            height: 100vh;
+        }
+        .login-card {
+            background: white;
+            padding: 40px 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 420px;
+            margin: 80px auto;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {opacity:0; transform: translateY(15px);}
+            to {opacity:1; transform: translateY(0);}
+        }
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #1F2937;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 15px;
+            color: #6B7280;
+            margin-bottom: 25px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
 
 
 def set_latest_df(df, name="df_latest"):
