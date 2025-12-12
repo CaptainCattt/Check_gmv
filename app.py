@@ -6,7 +6,18 @@ import pandas as pd
 import plotly.express as px
 sys.path.append(os.path.abspath("."))
 
-st.title(" 📊 My Data Automation Pipeline")
+st.markdown("""
+<h1 style="
+    text-align:center;
+    font-size:38px;
+    font-weight:800;
+    color:#111;
+    margin-bottom:10px;
+">
+🔥 TODAY PERFORMANCE REPORT 🔥
+</h1>
+""", unsafe_allow_html=True)
+
 st.markdown("""
         <style>
         body {
