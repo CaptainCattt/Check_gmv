@@ -12,7 +12,6 @@ st.markdown("""
     font-size:38px;
     font-weight:800;
     color:#111;
-    margin-bottom:10px;
 ">
 🔥 TODAY PERFORMANCE REPORT 🔥
 </h1>
@@ -309,7 +308,7 @@ if "df_latest" in st.session_state:
     kpi = compute_kpi(df)
 
     st.markdown(
-        "<h2 style='text-align:center; font-weight:bold;'>📌 Tổng quan đơn hàng hôm nay </h2>",
+        "<h2 style='text-align:center; font-size:28px; font-weight:bold;'>🚀 Tổng quan đơn hàng hôm nay 🚀</h2>",
         unsafe_allow_html=True
     )
 
