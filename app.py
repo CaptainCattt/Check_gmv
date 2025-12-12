@@ -309,7 +309,7 @@ if "df_latest" in st.session_state:
     kpi = compute_kpi(df)
 
     st.markdown(
-        "<h2 style='text-align:center; margin-top:5px;font-weight:bold;'>📌 Tổng quan đơn hàng hôm nay </h2>",
+        "<h2 style='text-align:center; font-weight:bold;'>📌 Tổng quan đơn hàng hôm nay </h2>",
         unsafe_allow_html=True
     )
 
