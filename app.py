@@ -251,7 +251,7 @@ uploaded_file = st.sidebar.file_uploader(
 
 if uploaded_file:
     st.sidebar.success("CSV Uploaded!")
-    if st.sidebar.button("Run Flow 1"):
+    if st.sidebar.button("Check GMV Now"):
         df = flow1(uploaded_file)
         set_latest_df(df, "df_latest")
         st.session_state["flow_name"] = "Flow 1 Result"
