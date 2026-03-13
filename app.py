@@ -74,7 +74,7 @@ def compute_kpi(df: pd.DataFrame):
 
     # 2️⃣ Số đơn đã hủy
     canceled_orders = df[df['Order Substatus']
-                         == 'Canceled']['Order ID'].nunique()
+                         == 'Cancelled']['Order ID'].nunique()
 
     # 3️⃣ GMV ước tính
     if 'SKU Subtotal After Discount' in df.columns and 'SKU Platform Discount' in df.columns:
