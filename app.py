@@ -79,7 +79,7 @@ def compute_kpi(df: pd.DataFrame):
     # 3️⃣ GMV ước tính
     if 'SKU Subtotal After Discount' in df.columns and 'SKU Platform Discount' in df.columns:
         # Chỉ lấy các đơn không bị hủy
-        df_valid = df[df["Order Status"] != 'Canceled']
+        df_valid = df[df["Order Status"] != 'Cancelled']
         gmv = df_valid['SKU Subtotal After Discount'].sum(
         ) + df_valid['SKU Platform Discount'].sum()
 
